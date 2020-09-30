@@ -1,0 +1,71 @@
+/*
+#f8efea //off white
+#ded369 //inside of avocado green
+#e0475b //lighter than tomato red
+#192f01 //salad dark green
+*/
+body {
+    background-color: #f8efea;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #ded369;
+    
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;        
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Colour change from hovering over the menu */
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: #e0475b;
+}
+
+/* Dropdown content; hidden by default*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ac9333;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #b02222;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
