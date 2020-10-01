@@ -1,7 +1,7 @@
 [Greenb00k]
 ==============
 
-Team Name: FoodifyWasAlreadyTaken
+Team Name: Greenb00k
 
 Team Members:
 Arunav Sinha - Student Number 300203055
