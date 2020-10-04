@@ -15,3 +15,6 @@ Vincent Quirion - Student Number 300200737 - Github Username: VincentQuirion
 Product Name: Greenb00k
 
 Description: Greenb00k is a web application that allows users to search for cooking recipes using the ingredients they already have.
+
+
+NOTE FOR SEG2900 MARKING: This Github Repository was transferred and while all the members committed their student numbers, that information was deleted.
