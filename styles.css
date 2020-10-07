@@ -24,9 +24,11 @@ html, body {
 }
 
 /* Colour change from hovering over the menu */
+/*
 .navbar a:hover, .dropdown:hover .dropbtn{
     background-color: #e0475b;
 }
+*/
 
 
 .navbar #top-left-logo {
