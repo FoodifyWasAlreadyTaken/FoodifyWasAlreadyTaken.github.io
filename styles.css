@@ -4,8 +4,15 @@
 #e0475b //lighter than tomato red
 #192f01 //salad dark green
 */
-body {
+
+html, body {
+    height: 100%;
+    width: 100%;
     background-color: #f8efea;
+}
+
+.fitScreen {
+    height: 100%;
 }
 
 .navbar {
@@ -36,4 +43,20 @@ body {
     flex-direction: row;
     justify-content: space-around;
     color: #f8efea;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.half-page {
+    max-width: 50%;
 }
