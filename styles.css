@@ -9,6 +9,8 @@ html, body {
     height: 100%;
     width: 100%;
     background-color: #f8efea;
+    margin: 0;
+    padding: 0;
 }
 
 .fitScreen {
@@ -45,6 +47,28 @@ html, body {
     flex-direction: row;
     justify-content: space-around;
     color: #f8efea;
+}
+
+#homescreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+}
+
+#homescreen h1 {
+    font-size: 20vh;
+}
+
+#homescreen input {
+    padding-right: 1vw;
+    padding-left: 1vw;
+    width: 50vw;
+    font-size: 5vh;
+}
+
+#homescreen button {
+    margin: 10vh 0vh 25vh;
 }
 
 .dropdown:hover .dropdown-content {
