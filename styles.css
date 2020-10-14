@@ -25,7 +25,7 @@ html, body {
     justify-content: space-between;
 }
 
-/* Colour change from hovering over the menu */
+/* Colour change from hovering over the menu - removed for now, we might re-do */
 /*
 .navbar a:hover, .dropdown:hover .dropbtn{
     background-color: #e0475b;
@@ -84,5 +84,70 @@ html, body {
 }
 
 .half-page {
-    max-width: 50%;
+    flex: 50%;
 }
+
+/* General Recipe menu CSS (can be used for other stuff) */
+div.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+div.wrapper-spaced {
+    display: flex;
+    justify-content: space-around;
+}
+/* ENDOF General Recipe menu CSS (can be used for other stuff) */
+
+/* Specific Recipe Menu CSS (prob can't be used for other stuff) */
+button.recipe-button {
+    width: 90%;
+    height: 90px;
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: normal;
+    font-size: 24px;
+    background-color: #cccc88;
+    color: black;
+    
+    text-align: center;
+    vertical-align: middle;
+} 
+
+div.recipe-container {
+    display: none;
+}
+
+div.recipe-container  ul {
+    list-style-type: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+div.recipe-container  li {
+    list-style-type: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+
+div.recipe-container  div.recipe-gallery {
+    margin: 5px 5px 5px 5px;
+    float: left;
+    width: 30%;
+}
+
+div.recipe-container  div.recipe-gallery img {
+    margin: 5px 5px 5px 5px;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+div.img-desc {
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+/* ENDOF Specific Recipe Menu CSS (prob can't be used for other stuff) */
