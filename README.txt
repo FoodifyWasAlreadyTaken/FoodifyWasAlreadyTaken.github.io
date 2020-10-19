@@ -16,5 +16,5 @@ Product Name: Greenb00k
 
 Description: Greenb00k is a web application that allows users to search for cooking recipes using the ingredients they already have. By using the ingredients already at their disposal, users can save time and money!
 
-
-NOTE FOR SEG2900 MARKING: This Github Repository was transferred and while all the members committed their student numbers, that information was deleted.
+FAQ doc
+https://docs.google.com/document/d/1vntSrlsOGbxcV219_uyL6PXB6UDqAMVH7I8fmEDTS2s/edit 

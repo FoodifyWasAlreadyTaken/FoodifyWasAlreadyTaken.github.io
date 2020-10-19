@@ -114,10 +114,12 @@ button.recipe-button {
     text-align: center;
     vertical-align: middle;
 } 
+/*
 
 div.recipe-container {
     display: none;
 }
+*/
 
 div.recipe-container  ul {
     list-style-type: none !important;
