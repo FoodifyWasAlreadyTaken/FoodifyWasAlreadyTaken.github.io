@@ -1,13 +1,11 @@
 Overall Look and Feel for Greenb00k
 ===================================
-
 The overall look and feel should be minimalist, but inspiring.
 Beautiful ingredients and shocking statistics about food waste will be at the core of the website's design.
 The website should look friendly and easy to use.
 
 Colors
 ======
-
 For Greenb00k, colors expose our personality to the users and represent that we are dedicated envrionment and user-friendly.
 These are our color swatches:
 
@@ -17,3 +15,21 @@ These are our color swatches:
 - Pakistan Green : #036D19
 - Green Pantone  : #09A129
 - Bone           : #EAE1D7
+
+Iconography
+===========
+We will focus on using icons that have a "flat" design, which adheres to the overall look and feel.
+We will use icons from the Font Awesome set, because they're pretty straightforward to use and they can serve almost every purpose.
+
+Typography
+==========
+We will be using Open Sans from Google Fonts.
+
+Links
+=====
+Links should not be underlined and should look like a button when a aser hovers over it.
+
+Button
+======
+Buttons will be flat designed using the chosen colors outlined above.
+
