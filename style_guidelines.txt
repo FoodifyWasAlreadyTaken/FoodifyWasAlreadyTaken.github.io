@@ -1,1 +1,13 @@
-Greeb00k website style guidelines
+Overall Look and Feel for Greenb00k
+===================================
+
+The overall look and feel should be minimalist, but inspiring.
+Beautiful ingredients and shocking statistics about food waste will be at the core of the website's design.
+The website should look friendly and easy to use.
+
+Colors
+======
+
+For Greenb00k, colors expose our personality to the users and represent that we are dedicated envrionment and user-friendly.
+These are our color swatches:
+
