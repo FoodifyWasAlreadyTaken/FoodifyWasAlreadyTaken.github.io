@@ -11,3 +11,9 @@ Colors
 For Greenb00k, colors expose our personality to the users and represent that we are dedicated envrionment and user-friendly.
 These are our color swatches:
 
+- Gunmetal       : #0A2E36
+- Spring Green   : #27FB6B
+- Emerald        : #14CC60
+- Pakistan Green : #036D19
+- Green Pantone  : #09A129
+- Bone           : #EAE1D7
