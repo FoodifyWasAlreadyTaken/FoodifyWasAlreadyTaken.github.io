@@ -30,17 +30,20 @@ html, body {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.navbar a{
-    color: #EAE1D7;
+a{
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     padding-right: 1vw;
     padding-left: 1vw;
 }
 
+.navbar a{
+    color: #EAE1D7;
+}
+
 /* Colour change from hovering over the menu - removed for now, we might re-do */
 
-.navbar a:hover, .dropdown:hover .dropbtn{
+a:hover, .dropdown:hover .dropbtn{
     background-color: #14CC60;
     border-radius: 10px;
 }
@@ -61,11 +64,25 @@ html, body {
     color: #f8efea;
 }
 
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #036D19;
+    align-items: center;
+}
+
+footer a {
+    color: #0A2E36;
+    font-size: large;
+    margin: 10vh;
+}
+
 #homescreen {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: space-around;
+    flex-grow: 1;
 }
 
 #homescreen img {
@@ -81,7 +98,7 @@ html, body {
 }
 
 #homescreen button {
-    margin: 10vh 0vh 25vh;
+    margin: 10vh 0 25vh;
 }
 
 .dropdown:hover .dropdown-content {
