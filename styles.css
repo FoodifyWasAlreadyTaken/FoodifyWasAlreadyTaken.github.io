@@ -15,6 +15,10 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .fitScreen {
     height: 100%;
 }
@@ -144,21 +148,22 @@ div.dropdown  li {
 
 /* FAQ CSS */
 
-div.dropdown .faq li {
+div.faq li {
     list-style-type: none !important;
     padding: 0;
-    margin: 0;
+    font-size: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 20px;
 }
 
 button.faq-button {
-    width: 90%;
+    width: 60%;
     height: 90px;
-    align-self: center;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
-    line-height: normal;
     font-size: 24px;
-    background-color: #036D19;
+    background-color: #14CC60;
     color: #0A2E36;
 } 
 
@@ -173,8 +178,8 @@ button.recipe-button {
     margin-bottom: 30px;
     line-height: normal;
     font-size: 24px;
-    background-color: #cccc88;
-    color: black;
+    background-color: #14CC60;
+    color: #0A2E36;
     
     text-align: center;
     vertical-align: middle;

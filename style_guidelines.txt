@@ -9,12 +9,18 @@ Colors
 For Greenb00k, the colors express our personality to the users and also symbolize that we are envrionment and user-friendly.
 These are our color swatches:
 
-- Gunmetal       : #0A2E36
+- Gunmetal       : #0A2E36 
+    >main text
 - Spring Green   : #27FB6B
+    >hover over navbar links
 - Emerald        : #14CC60
+    >Dropdown button colours
 - Pakistan Green : #036D19
+    >Footer Colour
 - Green Pantone  : #09A129
+    >normal navbar colour
 - Bone           : #EAE1D7
+    >background 
 
 Iconography
 ===========
