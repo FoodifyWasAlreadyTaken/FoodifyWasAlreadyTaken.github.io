@@ -27,12 +27,15 @@ html, body {
     justify-content: space-between;
     color: #EAE1D7;
     font-family: 'Open Sans', sans-serif;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .navbar a{
     color: #EAE1D7;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+    padding-right: 1vw;
+    padding-left: 1vw;
 }
 
 /* Colour change from hovering over the menu - removed for now, we might re-do */
@@ -65,9 +68,9 @@ html, body {
     align-content: space-around;
 }
 
-#homescreen h1 {
-    font-size: 20vh;
-    color: #036D19;
+#homescreen img {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
 }
 
 #homescreen input {
