@@ -22,18 +22,25 @@ html, body {
 .navbar {
     height: 10%;
     overflow: hidden;
-    background-color: #ded369;
+    background-color: #09A129;
     display: flex;
     justify-content: space-between;
+    color: #EAE1D7;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar a{
+    color: #EAE1D7;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Colour change from hovering over the menu - removed for now, we might re-do */
-/*
-.navbar a:hover, .dropdown:hover .dropbtn{
-    background-color: #e0475b;
-}
-*/
 
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: #14CC60;
+    border-radius: 10px;
+}
 
 .navbar #top-left-logo {
     width: 20%;
@@ -60,6 +67,7 @@ html, body {
 
 #homescreen h1 {
     font-size: 20vh;
+    color: #036D19;
 }
 
 #homescreen input {
