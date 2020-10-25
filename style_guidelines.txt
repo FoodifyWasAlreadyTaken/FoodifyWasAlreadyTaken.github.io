@@ -6,7 +6,7 @@ The website should look friendly and easy to use.
 
 Colors
 ======
-For Greenb00k, colors expose our personality to the users and represent that we are dedicated envrionment and user-friendly.
+For Greenb00k, the colors express our personality to the users and also symbolize that we are envrionment and user-friendly.
 These are our color swatches:
 
 - Gunmetal       : #0A2E36
