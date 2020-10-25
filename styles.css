@@ -8,6 +8,12 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
 .fitScreen {
     height: 100%;
 }
@@ -22,13 +28,11 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.navbar a{
+.navbar a {
     color: #EAE1D7;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
 }
-
-/* Colour change from hovering over the menu - removed for now, we might re-do */
 
 .navbar a:hover, .dropdown:hover .dropbtn{
     background-color: #14CC60;
@@ -117,22 +121,25 @@ div.dropdown  li {
 
 /* FAQ CSS */
 
-div.dropdown .faq li {
+div.faq li {
     list-style-type: none !important;
-    padding: 0;
-    margin: 0;
+    border: 2px;
+    border-color: #0A2E36;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
 button.faq-button {
     width: 90%;
     height: 90px;
     align-self: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     line-height: normal;
     font-size: 24px;
-    background-color: #036D19;
-    color: #0A2E36;
+    background-color: #14CC60;
 } 
 
 /* ENDOF FAQ CSS */
