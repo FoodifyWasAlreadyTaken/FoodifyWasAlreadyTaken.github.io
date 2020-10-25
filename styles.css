@@ -8,9 +8,11 @@
 html, body {
     height: 100%;
     width: 100%;
-    background-color: #f8efea;
+    background-color: #EAE1D7;
+    color: #0A2E36;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .fitScreen {
@@ -42,7 +44,7 @@ html, body {
 }
 
 .navbar #top-right-links {
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -84,7 +86,7 @@ html, body {
 }
 
 .half-page {
-    flex: 50%;
+    width: 50%;
 }
 
 /* General Recipe menu CSS (can be used for other stuff) */
@@ -97,7 +99,42 @@ div.wrapper-spaced {
     display: flex;
     justify-content: space-around;
 }
+
+div.dropdown  ul {
+    list-style-type: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+div.dropdown  li {
+    list-style-type: none !important;
+    padding: 0;
+    margin: 0;
+}
+
 /* ENDOF General Recipe menu CSS (can be used for other stuff) */
+
+/* FAQ CSS */
+
+div.dropdown .faq li {
+    list-style-type: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+button.faq-button {
+    width: 90%;
+    height: 90px;
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: normal;
+    font-size: 24px;
+    background-color: #036D19;
+    color: #0A2E36;
+} 
+
+/* ENDOF FAQ CSS */
 
 /* Specific Recipe Menu CSS (prob can't be used for other stuff) */
 button.recipe-button {
@@ -121,26 +158,15 @@ div.recipe-container {
 }
 */
 
-div.recipe-container  ul {
-    list-style-type: none !important;
-    padding: 0;
-    margin: 0;
-}
-
-div.recipe-container  li {
-    list-style-type: none !important;
-    padding: 0;
-    margin: 0;
-}
 
 
-div.recipe-container  div.recipe-gallery {
+div.dropdown  div.recipe-gallery {
     margin: 5px 5px 5px 5px;
     float: left;
     width: 30%;
 }
 
-div.recipe-container  div.recipe-gallery img {
+div.dropdown  div.recipe-gallery img {
     margin: 5px 5px 5px 5px;
     float: left;
     width: 100%;

@@ -27,7 +27,7 @@ We will be using Open Sans from Google Fonts.
 
 Links
 =====
-Links should not be underlined and should look like a button when a aser hovers over it.
+Links should not be underlined and should look like a button when a user hovers over it.
 
 Button
 ======
