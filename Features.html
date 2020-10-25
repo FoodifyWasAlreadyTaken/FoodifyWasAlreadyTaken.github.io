@@ -36,7 +36,7 @@
 		</div>
 	</div>
 
-			<center>
+			<div style="text-align: center;">
 
 			<!-- point 1 -->
 
@@ -65,7 +65,29 @@
 				By making Greenb00k recipes, you're reducing food waste in your house and in your city's grocery stores
 			</li>
 			</h3>
-		</center>
+
+				<h1>So far, Greenb00k users have saved more than <strong>$</strong><strong id="money"></strong> and
+					<strong id="food"></strong> tons of food !
+				</h1>
+
+		</div>
 	</body>
+
+	<script>
+		function increment(id, increment, start_date) {
+			var now = new Date();
+
+			var count = (((now.getTime() - start_date.getTime()) / 1000 + Math.random()*0.5) * increment).toPrecision(4);
+
+			console.log(now.getSeconds(), start_date.getSeconds())
+
+			document.getElementById(id).innerText = count.toString();
+
+		}
+
+		setInterval(increment, 1000, "money", 0.05, new Date(1603661512689))
+		setInterval(increment, 1000, "food", 0.0003, new Date(1603661512689))
+
+	</script>
 
 </html>
