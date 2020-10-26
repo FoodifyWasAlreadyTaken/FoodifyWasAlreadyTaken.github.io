@@ -14,7 +14,7 @@ a {
 }
 
 .fitScreen {
-    height: 100%;
+    height: 80%;
 }
 
 .navbar {
@@ -67,6 +67,8 @@ footer {
     justify-content: space-around;
     background-color: #036D19;
     align-items: center;
+    width: 100%;
+    height: 10%;
 }
 
 footer a {
