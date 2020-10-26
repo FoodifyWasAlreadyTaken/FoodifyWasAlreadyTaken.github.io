@@ -37,13 +37,13 @@
 
    <!-- ABOUT US - OUR MISSION/VALUES -->
     <div class="fitScreen" id="mission-values">
-        <div class="left half-page">            
+        <div>
             <h1>Greenb00k: 0 hassle, 0 waste!</h1>
             <p>
                 Here at Greenb00k, we hope to bring you the best experience you can get for learning new and exciting recipes as fast and conveniently as possible! Our innovative search engine and database tagging system lets you bring up hundreds of recipes based  on the ingredients and appliances you have at home, making the art of cooking as simple and hassle free as possible! Any user can submit recipes and get feedback from others, and clicking your profile page lets you see your liked recipes and any of the recipes you've decided to share with us!  
             </p>
         </div>
-        <div class="right half-page wrapper">
+        <div>
             <img src="https://dummyimage.com/16:9x400&text=Group+Photo" alt="Group photo with team members">
         </div>
     </div>
@@ -63,40 +63,31 @@
         }
 
         #picture {
-            position:relative; 
-            width:auto; 
+            position:relative;
+            width:auto;
             height:auto;
         }
-        #picture .image, #picture .textred, #picture .textblue {
+        #picture .image, #picture .text {
             transition: opacity 0.5s ease-in-out;
         }
-        #picture .textred {
-            position:absolute; 
-            top:0; 
-            left:0; 
+        #picture .text {
+            position:absolute;
+            top:0;
+            left:0;
             opacity:0;
             background-color: white;
-            color: red;
+            color: #14CC60;
             margin: 10px;
             padding: 10px;
         }
 
-        #picture .textblue {
-            position:absolute; 
-            top:0; 
-            left:0; 
-            opacity:0;
-            background-color: white;
-            color: blue;
-            margin: 10px;
-            padding: 10px;
-        }
 
         #picture:hover .image {
             opacity:0;
         }
-        #picture:hover .textred, #picture:hover .textblue {
+        #picture:hover .text {
             opacity:1;
+            color: #14CC60;
         }
     </style>
     
@@ -108,7 +99,7 @@
             <td>
                 <div id="picture">
                     <img src = "https://dummyimage.com/200x300/8a858a/3744d4&text=Arunav's+Picture" class="image" alt="Arunav's Picture" style="width:100%">
-                    <div class="textblue">
+                    <div class="text">
                         <h3 style = "text-align:center;">Arunav Sinha</h3>
                         <p>I am Arunav and I work for Greenb00k.</p>
                     </div>
@@ -117,7 +108,7 @@
             <td>
                 <div id="picture">
                     <img src = "https://dummyimage.com/200x300/8a858a/3744d4&text=Iman's+Picture" class="image" alt="Iman's Picture" style="width:100%">
-                    <div class="textred">
+                    <div class="text">
                         <h3 style = "text-align:center;">Iman Jama</h3>
                         <p>I am Iman and I work for Greenb00k.</p>
                     </div>
@@ -126,7 +117,7 @@
             <td>
                 <div id="picture">
                     <img src = "https://dummyimage.com/200x300/8a858a/3744d4&text=Sabiha's+Picture" class="image" alt="Sabiha's Picture" style="width:100%">
-                    <div class="textblue">
+                    <div class="text">
                         <h3 style = "text-align:center;">Sabiha Khan</h3>
                         <p>I am Sabiha and I work for Greenb00k.</p>
                     </div>
@@ -135,7 +126,7 @@
             <td>
                 <div id="picture">
                     <img src = "https://dummyimage.com/200x300/8a858a/3744d4&text=Tisham's+Picture" class="image" alt="Tisham's Picture" style="width:100%">
-                    <div class="textred">
+                    <div class="text">
                         <h3 style = "text-align:center;">Tisham Islam</h3>
                         <p>I am Tisham and I work for Greenb00k.</p>
                     </div>
@@ -146,7 +137,7 @@
             <td>
                 <div id="picture">
                     <img src = "https://dummyimage.com/200x300/8a858a/3744d4&text=Tuna's+Picture" class="image" alt="Tuna's Picture" style="width:100%">
-                    <div class="textblue">
+                    <div class="text">
                         <h3 style = "text-align:center;">Tuna Bolukbasi</h3>
                         <p>I am Tuna and I work for Greenb00k.</p>
                     </div>
@@ -155,7 +146,7 @@
             <td>
                 <div id="picture">
                     <img src = "https://dummyimage.com/200x300/8a858a/3744d4&text=Uvil's+Picture" class="image" alt="Uvil's Picture" style="width:100%">
-                    <div class="textred">
+                    <div class="text">
                         <h3 style = "text-align:center;">Uvil Dahanayake</h3>
                         <p>I am Uvil and I work for Greenb00k.</p>
                     </div>
@@ -164,7 +155,7 @@
             <td>
                 <div id="picture">
                     <img src = "https://dummyimage.com/200x300/8a858a/3744d4&text=Vincent's+Picture" class="image" alt="Vincent's Picture" style="width:100%">
-                    <div class="textblue">
+                    <div class="text">
                         <h3 style = "text-align:center;">Vincent Quirion</h3>
                         <p>I am Vincent and I work for Greenb00k.</p>
                     </div>
@@ -176,6 +167,12 @@
         </tr>
         </tbody>
     </table>
+    <!-- FOOTER -->
+    <footer>
+        <a href="contact.html">Contact us</a>
+        <a href="">Copyrights and Terms of Services</a>
+    </footer>
+    <!-- FOOTER END -->
 
 </body>
 </html>

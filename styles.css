@@ -1,10 +1,3 @@
-/*
-#f8efea //off white
-#ded369 //inside of avocado green
-#e0475b //lighter than tomato red
-#192f01 //salad dark green
-*/
-
 html, body {
     height: 100%;
     width: 100%;
@@ -13,6 +6,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    color: #0A2E36;
 }
 
 a {
@@ -81,6 +75,8 @@ footer a {
     margin: 5vh;
 }
 
+/* HOMESCREEN CSS */
+
 #homescreen {
     display: flex;
     flex-direction: column;
@@ -104,21 +100,16 @@ footer a {
 #homescreen button {
     margin: 10vh 0 25vh;
 }
+/* END OF HOMESCREEN CSS */
+
+/* ABOUT CSS */
+#mission-values {
+    padding: 3vw;
+    display: flex;
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.right {
-    float: right;
-}
-
-.left {
-    float: left;
-}
-
-.half-page {
-    width: 50%;
 }
 
 /* General Recipe menu CSS (can be used for other stuff) */
