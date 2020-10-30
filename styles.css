@@ -6,7 +6,6 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    color: #0A2E36;
 }
 
 a {
@@ -20,10 +19,10 @@ a {
 .navbar {
     height: 10%;
     overflow: hidden;
-    background-color: #eae1d7;
+    background-color: #09a129;
     display: flex;
     justify-content: space-between;
-    color: #09a129;
+    color: #EAE1D7;
     font-family: 'Open Sans', sans-serif;
     text-transform:uppercase;
     /*box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);*/
@@ -37,11 +36,12 @@ a{
 }
 
 .navbar a{
-    color: #09a129;
+    color: #EAE1D7;
 }
 
 .navbar a:hover {
-  color: #0a2e36;
+    background-color: #14CC60;
+    border-radius: 10px;
 }
 
 /* Colour change from hovering over the menu - removed for now, we might re-do */
@@ -66,14 +66,14 @@ a{
 footer {
     display: flex;
     justify-content: space-around;
-    background-color: #EAE1D7;
+    background-color: #036D19;
     align-items: center;
     width: 100%;
     height: 10%;
 }
 
 footer a {
-    color: #09a129;
+    color: #EAE1D7;
     font-size: larger;
 }
 
