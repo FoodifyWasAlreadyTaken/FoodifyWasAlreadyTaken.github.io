@@ -67,7 +67,7 @@
                 <li><h3>By making Greenb00k recipes, you're reducing food waste in your house and in your city's grocery stores </h3></li>
             </ul>
         </div>
-            <h1>So far, Greenb00k users have saved more than <strong>$</strong><strong id="money"></strong> and
+            <h1>So far, Greenb00k users have saved more than <strong id="money"></strong> and
 				<strong id="food"></strong> tons of food !
             </h1>
     </div>
@@ -81,10 +81,25 @@
 	</body>
 
 	<script>
-		function increment(id, increment, start_date) {
+        var money_formatter = new Intl.NumberFormat('en-CA', {
+            style: 'currency',
+            currency: 'CAD',
+
+            // These options are needed to round to whole numbers if that's what you want.
+            //minimumFractionDigits: 0,
+            //maximumFractionDigits: 0,
+        });
+
+        var weight_formatter = new Intl.NumberFormat('en-CA', {
+            style: 'decimal',
+        });
+
+
+
+        function increment(id, increment, start_date, formatter) {
 			var now = new Date();
 
-			var count = (((now.getTime() - start_date.getTime()) / 1000 + Math.random()*0.5) * increment).toPrecision(5);
+			var count = formatter.format(((now.getTime() - start_date.getTime()) / 1000 + Math.random()*0.5) * increment);
 
 			console.log(now.getSeconds(), start_date.getSeconds())
 
@@ -92,8 +107,8 @@
 
 		}
 
-		setInterval(increment, 1000, "money", 0.05, new Date(1603661512689))
-		setInterval(increment, 1000, "food", 0.0003, new Date(1603661512689))
+		setInterval(increment, 1000, "money", 0.05, new Date(1603661512689), money_formatter)
+		setInterval(increment, 1000, "food", 0.0003, new Date(1603661512689), weight_formatter)
 
 	</script>
 
