@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/a52031dad5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Find Recipes</title>
+</head>
+<body>
+   
+<!-- NAVBAR COMPONENT -->
+    <div class="navbar">
+
+        <a id="top-left-logo" href="./index.html">
+            <img src="./static/small_logo.png" alt="Greenb00k logo" width="20%"/>
+            <h1>Greenb00k</h1>
+        </a>
+
+        <div id="search-upload-div">
+            <h2>
+                <a href="#search.html">Search</a>
+                |
+                <a href="#add_recipe.html">Upload</a>
+            </h2>
+        </div>
+
+        <div id="top-right-links">
+            <h2>
+                <a href="pricing.html">Pricing</a>
+                <a href="about.html">About us</a>
+                <a href="Features.html">Features</a>
+                <a href="faq.html">FAQ</a>
+                <a href="#profile.html"><i class="far fa-user-circle"></i></a>
+            </h2>
+        </div>
+    </div>
+<!-- ENDOF NAVBAR COMPONENT -->
+   
+   <h1 style="text-align: center; ">Stuff</h1>
+   
+   <div style="width: 90%; background-color: #fff; margin-left: 5%;"> 
+       Menu: This will be made to look a *lot* better later
+       <div class="dropdown">
+            <a id="options" href="#">Options</a>
+            <ul style="display: none">
+                <li><input type="checkbox" checked>Implicitly add common items (Salt, Pepper, Flour)</li>
+                <li><input type="checkbox" checked>Strict mode - Will *only* consider recipes that have all the ingredients you've entered  </li>
+            </ul>
+       </div>
+   </div>
+   
+   <div>
+        <ul style="list-style-type: none;">
+            <li>
+                <div class="recipe-search">
+                    <a href="#">
+                        <img src="https://dummyimage.com/400&text=Recipe" alt="Recipe image"> 
+                    </a>
+                    <div style="">
+                        <h2 style="margin-left: 20%"><a href="#">Recipe Name!</a></h2>
+                        <p>Description stuff: Lorem ipsum delorem blah blah</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    
+<!-- FOOTER -->
+    <footer>
+        <a href="about.html">Contact us</a>
+        <a href="about.html">Copyrights and Terms of Services</a>
+    </footer>
+<!-- FOOTER END -->
+    <script>
+        let opt = document.getElementById("options");
+        opt.addEventListener("click", function(){
+            let list = this.nextElementSibling;
+            (list.style.display === "none") ? list.style.display = "block" : list.style.display = "none";
+        })
+    </script>
+
+</body>
+</html>

@@ -39,7 +39,7 @@ a{
     color: #EAE1D7;
 }
 
-a:hover {
+.navbar a:hover, footer a:hover {
     background-color: #14CC60;
     border-radius: 10px;
 }
@@ -116,6 +116,16 @@ footer a {
     display: block;
 }
 
+/* SEARCH PAGE CSS */
+div.recipe-search {
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+}
+
+/* ENDOF SEARCH PAGE CSS */
+
+
 /* General Recipe menu CSS (can be used for other stuff) */
 div.wrapper {
     display: flex;
@@ -164,7 +174,7 @@ button.faq-button {
 
 /* ENDOF FAQ CSS */
 
-/* Specific Recipe Menu CSS (prob can't be used for other stuff) */
+/* PROFILE CSS (prob can't be used for other stuff) */
 button.recipe-button {
     width: 90%;
     height: 90px;
@@ -191,7 +201,6 @@ div.recipe-container {
 div.dropdown  div.recipe-gallery {
     margin: 5px 5px 5px 5px;
     float: left;
-    width: 30%;
 }
 
 div.dropdown  div.recipe-gallery img {
@@ -206,4 +215,4 @@ div.img-desc {
     width: 100%;
     text-align: center;
 }
-/* ENDOF Specific Recipe Menu CSS (prob can't be used for other stuff) */
+/* ENDOF PROFILE CSS (prob can't be used for other stuff) */
