@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     width: 100%;
-    background-color: #EAE1D7;
+    /*background-color: #EAE1D7; */
     color: #0A2E36;
     margin: 0;
     padding: 0;
@@ -107,6 +107,14 @@ footer a {
 /* END OF HOMESCREEN CSS */
 
 /* ABOUT CSS */
+#about-us {
+    background-image: url("./static/about_background.png");
+
+    background-attachment: fixed;
+
+    background-size: cover;
+}
+
 #mission-values {
     padding: 3vw;
     display: flex;
@@ -151,7 +159,28 @@ div.dropdown  li {
 
 /* ENDOF General Recipe menu CSS (can be used for other stuff) */
 
+
+/*  PRICING CSS */
+#pricing {
+    background-image:url("static/pricing_background.png");
+
+    background-attachment: fixed;
+
+    background-size: cover;
+}
+
+/* END OF PRICING CSS */
+
+
 /* FAQ CSS */
+#faq {
+    background-image: url("static/faq_background.png");
+
+    background-attachment: fixed;
+
+    background-size: contain;
+}
+
 
 div.faq li {
     list-style-type: none !important;
@@ -173,6 +202,16 @@ button.faq-button {
 } 
 
 /* ENDOF FAQ CSS */
+
+
+/* FEATURES CSS */
+#features {
+    background-image: url("./static/features_background.png");
+
+    background-attachment: fixed;
+
+    background-size: cover;
+}
 
 /* PROFILE CSS (prob can't be used for other stuff) */
 button.recipe-button {
