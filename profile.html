@@ -2,29 +2,56 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a52031dad5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
 
 <body>
    
-   
-   
-    <img src="https://dummyimage.com/1920x100&text=Navbar+Here" alt="navbar" height="10%" style="padding-bottom: 20px">
-    <div class="fitScreen">
-        <div class="left half-page">       
-            <img src="https://dummyimage.com/400x400&text=Profile+Picture" alt="Your face goes here!" style="border-radius: 50%; padding: 50px 50px 50px 100px">
+   <!-- NAVBAR COMPONENT -->
+    <div class="navbar">
+
+        <a id="top-left-logo" href="./index.html">
+            <img src="./static/small_logo.png" alt="Greenb00k logo" width="20%"/>
+            <h1>Greenb00k</h1>
+        </a>
+
+        <div id="search-upload-div">
+            <h2>
+                <a href="#search.html">Search</a>
+                |
+                <a href="#add_recipe.html">Upload</a>
+            </h2>
         </div>
-        <div class="half-page" style="text-align: left; padding-top: 150px; margin-left: 30px;">
-           <h1> Your Name </h1>
-            <p style="font-size: 18px">
-                All kinds of text to go in here, talk about your interests, hobbbies, whatever made you choose Greenb00k or whatever.
+
+        <div id="top-right-links">
+            <h2>
+                <a href="pricing.html">Pricing</a>
+                <a href="about.html">About us</a>
+                <a href="Features.html">Features</a>
+                <a href="faq.html">FAQ</a>
+                <a href="#profile.html"><i class="far fa-user-circle"></i></a>
+            </h2>
+        </div>
+    </div>
+    <!-- ENDOF NAVBAR COMPONENT -->
+   
+    <div class="fitScreen">
+        <div style="width: 30%; float: left;">       
+            <img src="https://dummyimage.com/325x325&text=Profile+Picture" alt="Your face goes here!" style="border-radius: 50%; padding: 50px 0px 50px 0px; margin-left: 100px">
+        </div>
+        <div style="float: right; margin-top: 100px;">
+          <div class="wrapper">
+           <h1 style="align-self: center; margin-right: 10%; margin-left: 10%"> Your Name </h1>
+           </div>
+            <p style="font-size: 18px; margin-left: 10%; margin-right: 10%;">
+                All kinds of text to go in here, talk about your interests, hobbies, whatever made you choose Greenb00k or whatever.
             </p>
         </div>
     </div>
-    <div class="fitScreen">
+    <div style="height: 60%">
         <div class="wrapper">
             <button class="recipe-button"> Recipes Created <i class="fa fa-caret-down"></i></button>
         </div>
@@ -34,7 +61,7 @@
                     <div class="wrapper-spaced">
                         <div class="recipe-gallery">
                             <a href="#">
-                                <img src="https://dummyimage.com/300x300&text=Recipe" alt="Recipe image"> 
+                                <img src="https://dummyimage.com/325x325&text=Recipe" alt="Recipe image"> 
                             </a>
                             <a href="#">
                                 <div class="img-desc">Recipe image!</div>
@@ -42,14 +69,14 @@
                         </div>
                         <div class="recipe-gallery">
                             <a href="#">
-                                <img src="https://dummyimage.com/400x400&text=Recipe" alt="Recipe image"> 
+                                <img src="https://dummyimage.com/325x325&text=Recipe" alt="Recipe image"> 
                             </a>
                             <a href="#">
                                 <div class="img-desc">Recipe image!</div>
                             </a>
                         </div><div class="recipe-gallery">
                             <a href="#">
-                                <img src="https://dummyimage.com/400x400&text=Recipe" alt="Recipe image"> 
+                                <img src="https://dummyimage.com/325x325&text=Recipe" alt="Recipe image"> 
                             </a>
                             <a href="#">
                                 <div class="img-desc">Recipe image!</div>
@@ -68,7 +95,7 @@
                     <div class="wrapper-spaced">
                         <div class="recipe-gallery">
                             <a href="#">
-                                <img src="https://dummyimage.com/300x300&text=Recipe" alt="Recipe image"> 
+                                <img src="https://dummyimage.com/325x325&text=Recipe" alt="Recipe image"> 
                             </a>
                             <a href="#">
                                 <div class="img-desc">Recipe image!</div>
@@ -76,14 +103,14 @@
                         </div>
                         <div class="recipe-gallery">
                             <a href="#">
-                                <img src="https://dummyimage.com/400x400&text=Recipe" alt="Recipe image"> 
+                                <img src="https://dummyimage.com/325x325&text=Recipe" alt="Recipe image"> 
                             </a>
                             <a href="#">
                                 <div class="img-desc">Recipe image!</div>
                             </a>
                         </div><div class="recipe-gallery">
                             <a href="#">
-                                <img src="https://dummyimage.com/400x400&text=Recipe" alt="Recipe image"> 
+                                <img src="https://dummyimage.com/325x325&text=Recipe" alt="Recipe image"> 
                             </a>
                             <a href="#">
                                 <div class="img-desc">Recipe image!</div>
@@ -106,6 +133,13 @@
     }
         
     </script>
+    
+<!-- FOOTER -->
+    <footer>
+        <a href="about.html">Contact us</a>
+        <a href="about.html">Copyrights and Terms of Services</a>
+    </footer>
+<!-- FOOTER END -->
     
 </body>
 </html>
