@@ -175,9 +175,6 @@ div.dropdown  li {
 /* FAQ CSS */
 #faq {
     background-image: url("static/faq_background.png");
-
-    background-attachment: fixed;
-
     background-size: cover;
 }
 
