@@ -38,7 +38,7 @@
                 <a href="about.html">About us</a>
                 <a href="Features.html">Features</a>
                 <a href="faq.html">FAQ</a>
-                <a href="#profile.html"><i class="far fa-user-circle"></i></a>
+                <a href="profile.html"><i class="far fa-user-circle"></i></a>
             </h2>
         </div>
     </div>
@@ -48,9 +48,11 @@
     <div id="homescreen">
         <img src="./static/Greenbook_Logo_Long.png" alt="Greenb00k logo" height="auto" width="80%"/>
         <label>
-            <input type="text" placeholder="What's in your fridge?">
+            <input id="searchbar" type="text" placeholder="What's in your fridge?">
         </label>
-        <button onclick="window.location.href='#add_recipe.html';">Have a yummy recipe to share?</button>
+        <div id="suggestions-box">
+        </div>
+        <button id= "share_button" onclick="window.location.href='#add_recipe.html';">Have a yummy recipe to share?</button>
     </div>
 <!-- HOMESCREEN COMPONENT END -->
 
@@ -62,10 +64,12 @@
 <!-- FOOTER END -->
 
 <!-- SEARCH BAR AJAX SCRIPT -->
+<script src="ingredient_list.js"></script>
+<script src="ajax.js"></script>
+
 <script>
-
+    document.getElementById("searchbar").addEventListener("keyup", show_suggestions)
 </script>
-
 
 </body>
 </html>

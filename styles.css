@@ -97,11 +97,30 @@ footer a {
 #homescreen input {
     padding-right: 1vw;
     padding-left: 1vw;
-    width: 50vw;
-    font-size: 5vh;
+    width: 60vw;
+    font-size: 4vh;
 }
 
-#homescreen button {
+#homescreen #searchbar {
+    text-transform: capitalize;
+}
+
+#homescreen #suggestions-box {
+    height: 10px;
+}
+
+#homescreen #suggestions-box ul {
+    column-count: 6;
+
+    margin: 0;
+    padding: 0;
+
+    column-gap: 20px;
+
+    text-transform: capitalize;
+}
+
+#homescreen #share_button {
     margin: 10vh 0 25vh;
 }
 /* END OF HOMESCREEN CSS */
@@ -176,6 +195,7 @@ div.dropdown  li {
 #faq {
     background-image: url("static/faq_background.png");
     background-size: cover;
+    background-attachment: fixed;
 }
 
 
