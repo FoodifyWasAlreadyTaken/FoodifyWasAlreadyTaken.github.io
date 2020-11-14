@@ -6,6 +6,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Find Recipes</title>
+
+<style>
+    button {
+        background-color: #27FB6B;
+        color: #0A2E36;
+        border: none;
+    }
+    #ingredient-list table { 
+        margin: 20px 20px 20px 20px;
+    }
+    #ingredient-list table, thead, tbody, tr, td { 
+        border: 2px solid;
+        border-collapse: collapse;
+    }
+    #ingredient-list table thead{
+        border-color: #09A129;
+    }
+    #ingredient-list table tr.even {
+        border-color: #EAE1D7;
+    }    
+    #ingredient-list table tr.odd{
+        border-color: #09A129;
+    }    
+    #ingredient-list table tr td {
+        text-align: center;
+    }
+    div.right-caption {
+        text-align: center;
+        float: left; 
+        margin-top: 8%; 
+        margin-left: 5%; 
+        max-width: 40%; 
+    }
+    div.recipe-search {
+        margin: 200px 0px 200px 0px;
+    }
+    div.recipe-search a {
+        padding: 0;
+    }
+    ul.recipes li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    a {
+        padding: 0px;
+        
+    }
+    
+</style>
+    
 </head>
 <body>
    
@@ -19,7 +69,7 @@
 
         <div id="search-upload-div">
             <h2>
-                <a href="#search.html">Search</a>
+                <a href="./find_recipe.html">Search</a>
                 |
                 <a href="#add_recipe.html">Upload</a>
             </h2>
@@ -39,27 +89,220 @@
    
    <h1 style="text-align: center; ">Stuff</h1>
    
-   <div style="width: 90%; background-color: #fff; margin-left: 5%;"> 
-       Menu: This will be made to look a *lot* better later
-       <div class="dropdown">
-            <a id="options" href="#">Options</a>
-            <ul style="display: none">
-                <li><input type="checkbox" checked>Implicitly add common items (Salt, Pepper, Flour)</li>
-                <li><input type="checkbox" checked>Strict mode - Will *only* consider recipes that have all the ingredients you've entered  </li>
+   <div id="options-bar" style="width: 90%; background-color: #CCC; margin-left: 5%; margin-bottom: 1%; "> 
+       <div class="dropdown" style="text-align: center">
+            <a id="options-link" href="#" >Options</a> (Click to show) 
+            <ul class="options" style="display: none; text-align: left">
+                <li><input type="checkbox" checked>Implicitly add common items (Salt, Pepper, Butter, Flour, etc). The specific list of items can be viewed and configured on your <a href="./profile.html">profile page</a></li>
+                <li><input type="checkbox" checked>Strict mode - Will <b>ONLY</b> consider recipes that consist entirely of ingredients you've entered</li><li>
+                <input type="checkbox" checked>Appliance-agnostic - Will <b>NOT</b> consider appliances when displaying recipes. Enabled by default if no appliances are entered. You will need to enter appliances if disabled. </li>
             </ul>
-       </div>
+        </div>
+        
    </div>
+   <div id="ingredient-list" >
+            <table style="float: left; width: 40%; margin-left: 7.5%; margin-right: 2.5% ">
+                <thead>
+                    <td>Name</td>
+                    <td>Expiry date (dd/mm/yy)</td>
+                    <td>Remove</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Black Pepper</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Berries</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Blackberries</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Broccoli</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Black beans</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Breadcrumbs</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Brown Rice</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Brown Sugar</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Brussel Sprouts</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Butter</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Buttermilk</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Carrots</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Celery</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Chicken</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Corn</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table style="float: right; width: 40%; margin-left: 2.5%; margin-right: 7.5% ">
+                <thead>
+                    <td>Name</td>
+                    <td>Expiry date (dd/mm/yy)</td>
+                    <td>Remove</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Coffee</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Coconut</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Condensed Milk</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Lamb</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Oatmeal</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Onions</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Oregano</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Olives</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Parsley</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Peach</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Pears</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>White fish</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Watermelon</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>White Rice</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>White Wine</td>
+                        <td>dd/mm/yy</td>
+                        <td><button><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                </tbody>
+           </table>
+    </div>
    
-   <div>
-        <ul style="list-style-type: none;">
+   <div style=" margin-top: 10%; margin-bottom: 10%; width=100%">
+        <ul class="recipes" style="list-style-type: none; line-height: 150%">
             <li>
-                <div class="recipe-search">
-                    <a href="#">
-                        <img src="https://dummyimage.com/400&text=Recipe" alt="Recipe image"> 
+                <div class="recipe-search" >
+                    <a href="#" style="float: left">
+                        <img src="https://dummyimage.com/16:9x400&text=Recipe" alt="Recipe image"> 
                     </a>
-                    <div style="">
-                        <h2 style="margin-left: 20%"><a href="#">Recipe Name!</a></h2>
-                        <p>Description stuff: Lorem ipsum delorem blah blah</p>
+                    <div class="right-caption" style="float: left; margin-top: 10%; margin-left: 5%; max-width: 40%;">
+                        <h2 style=""><a href="#">Recipe Name!</a></h2>
+                        <p>Description stuff: Lorem ipsum delorem blah blah Lorem ipsum delorem blah blah Lorem ipsum delorem blah blah Lorem ipsum delorem blah blah Lorem ipsum delorem blah blah...</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="recipe-search" >
+                    <a href="#" style="float: left">
+                        <img src="https://dummyimage.com/16:9x400&text=Recipe" alt="Recipe image"> 
+                    </a>
+                    <div class="right-caption" >
+                        <h2 style=""><a href="#">Recipe Name!</a></h2>
+                        <p>Description stuff: Lorem ipsum delorem blah blah Lorem ipsum delorem blah blah Lorem ipsum delorem blah blah Lorem ipsum delorem blah blah Lorem ipsum delorem blah blah...</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="recipe-search" >
+                    <a href="#" style="float: left">
+                        <img src="https://dummyimage.com/16:9x400&text=Recipe" alt="Recipe image"> 
+                    </a>
+                    <div class="right-caption">
+                        <h2 style=""><a href="#">Recipe Name!</a></h2>
+                        <p>Description stuff: Lorem ipsum delorem blah blah Lorem ipsum delorem blah blah Lorem ipsum delorem blah blah Lorem ipsum delorem blah blah Lorem ipsum delorem blah blah...</p>
                     </div>
                 </div>
             </li>
@@ -74,11 +317,42 @@
     </footer>
 <!-- FOOTER END -->
     <script>
-        let opt = document.getElementById("options");
+        //makes option button dropdown the various things
+        let opt = document.getElementById("options-link");
         opt.addEventListener("click", function(){
             let list = this.nextElementSibling;
             (list.style.display === "none") ? list.style.display = "block" : list.style.display = "none";
         })
+        
+        //makes tables automatically even/odd (alternates their colours)
+        
+        //get the two tables
+        tables = document.getElementsByTagName("table");
+        
+        //for each table
+        for (let i = 0; i < tables.length; i++) {
+            //gets table body's rows 
+            rows = tables[i].children[1].children;
+            
+            //for each row in the table...
+            for (let j = 0; j < rows.length; j++) {                
+                
+                //check if the row's index is even or odd, adding the respective class to each row
+                j % 2 == 0 ? rows[j].className = "even" : rows[j].className = "odd";
+                
+                //this deletes any row on a click of the trashcan and updates the list to remain even/odd
+                rows[j].children[2].children[0].addEventListener("click", function () {
+                    Nrows = this.parentElement.children
+                    this.remove();
+                    
+                    //check if each moved row's index is even or odd, adding the respective class
+                    for (let j = 0; j < Nrows.length; j++) { 
+                        j % 2 == 0 ? Nrows[j].className = "even" : Nrows[j].className = "odd";
+                    }
+                //this makes sure "this" refers to the row that is clicked on 
+                }.bind(rows[j]))
+            }
+        }
     </script>
 
 </body>
