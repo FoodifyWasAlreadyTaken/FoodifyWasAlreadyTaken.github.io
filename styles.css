@@ -152,6 +152,12 @@ footer a {
     background-size: cover;
 }
 
+.recipe-search img {
+    height: 400px;
+    width: 711px;
+    object-fit: cover;
+}
+
 /* ENDOF SEARCH PAGE CSS */
 
 
