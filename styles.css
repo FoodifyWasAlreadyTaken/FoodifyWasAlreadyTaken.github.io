@@ -127,7 +127,7 @@ footer a {
 
 /* ABOUT CSS */
 #about-us {
-    background-image: url("./static/about_background.png");
+    background-image: url("static/about_background.png");
 
     background-attachment: fixed;
 
@@ -144,6 +144,13 @@ footer a {
 }
 
 /* SEARCH PAGE CSS */
+#find_recipe {
+    background-image: url("static/search_background.png");
+
+    background-attachment: fixed;
+
+    background-size: cover;
+}
 
 /* ENDOF SEARCH PAGE CSS */
 
