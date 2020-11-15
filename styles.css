@@ -156,6 +156,7 @@ footer a {
     height: 400px;
     width: 711px;
     object-fit: cover;
+    border-radius: 5%;
 }
 
 /* ENDOF SEARCH PAGE CSS */

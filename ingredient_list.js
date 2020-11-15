@@ -8,6 +8,9 @@ let suggestions = ["black pepper",
 
 
 "bread crumbs",
+    "bread",
+    "bruschetta",
+
 
 "brown rice",
 "brown sugar",
@@ -26,11 +29,18 @@ let suggestions = ["black pepper",
 "chicken",
 "cabbage",
 
+    "cherry tomatoes",
+    "cherry",
+    "chorizo",
+    "chives",
+
+
 "corn",
 "coffee",
 "coconut",
 "condensed milk",
 
+    "fish",
 
 "light mayonnaise",
 
