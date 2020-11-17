@@ -34,6 +34,9 @@ let suggestions = ["black pepper",
     "chorizo",
     "chives",
 
+    "cream cheese",
+    "cream",
+
 
 "corn",
 "coffee",
