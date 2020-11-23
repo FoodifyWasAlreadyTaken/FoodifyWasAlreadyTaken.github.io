@@ -85,7 +85,7 @@ footer a {
     align-items: center;
     align-content: space-around;
     flex-grow: 1;
-    background-image:url("./static/homescreen_background1.png");
+    background-image:url("./static/homescreen_background2.png");
     background-size:cover;
 }
 
