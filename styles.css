@@ -8,6 +8,16 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 }
 
+button:focus {
+    border: none;
+    outline: none;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -123,6 +133,31 @@ footer a {
 #homescreen #share_button {
     margin: 10vh 0 25vh;
 }
+
+#lookup-greenbook {
+    width: auto;
+	font-weight: bold;
+	margin-top: 3%;
+    height: 60px;
+	padding: 15px 35px 20px 35px;
+    margin-bottom: 15px;
+	border-radius: 30px;
+    font-size: 28px;
+    background-color: #14CC60;
+    color: #0A2E36;
+} 
+
+#share-recipe {
+    width: auto;
+	margin-top: 3%;
+    height: 60px;
+	padding: 15px 35px 15px 35px;
+    margin-bottom: 15px;
+	border-radius: 30px;
+    font-size: 20px;
+    background-color: #14CC60;
+    color: #0A2E36;
+} 
 /* END OF HOMESCREEN CSS */
 
 /* ABOUT CSS */
