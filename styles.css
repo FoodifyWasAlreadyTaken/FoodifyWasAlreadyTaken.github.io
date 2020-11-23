@@ -95,7 +95,7 @@ footer a {
     align-items: center;
     align-content: space-around;
     flex-grow: 1;
-    background-image:url("./static/homescreen_background1.png");
+    background-image:url("./static/homescreen_background2.png");
     background-size:cover;
 }
 
@@ -316,3 +316,11 @@ div.img-desc {
     text-align: center;
 }
 /* ENDOF PROFILE CSS (prob can't be used for other stuff) */
+
+/* DEMO RECIPE CSS */
+#Recipe1 {
+    background-image:url("./static/demorecipe_background.png");
+    background-attachment: fixed;
+
+    background-size: cover;
+}
