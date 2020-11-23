@@ -10,6 +10,9 @@
     <title>Find Recipes</title>
 
 <style>
+    a {
+        color: #09a129;
+    }
     button {
         background-color: #27FB6B;
         color: #0A2E36;
@@ -51,10 +54,6 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    a {
-        padding: 0;
-        color: #09a129;
-    }
     
 </style>
     
@@ -93,9 +92,9 @@
    
    <div id="options-bar" style="width: 90%; background-color: #CCC; margin-left: 5%; margin-bottom: 1%; "> 
        <div class="dropdown" style="text-align: center">
-            <a id="options-link" href="#" >Options</a> (Click to show) 
+            <a id="options-link" href="#" style="padding: 0px;" >Options</a> (Click to show) 
             <ul class="options" style="display: none; text-align: left">
-                <li><input type="checkbox" checked>Implicitly add common items (Salt, Pepper, Butter, Flour, etc). The specific list of items can be viewed and configured on your <a href="./profile.html">profile page</a></li>
+                <li><input type="checkbox" checked>Implicitly add common items (Salt, Pepper, Butter, Flour, etc). The specific list of items can be viewed and configured on your <a style="padding: 0px;" href="./#profile.html">profile page</a></li>
                 <li><input type="checkbox" checked>Strict mode - Will <b>ONLY</b> consider recipes that consist entirely of ingredients you've entered</li><li>
                 <input type="checkbox" checked>Appliance-agnostic - Will <b>NOT</b> consider appliances when displaying recipes. Enabled by default if no appliances are entered. You will need to enter appliances if disabled. </li>
             </ul>
@@ -252,7 +251,7 @@
 <!-- FOOTER -->
     <footer>
         <a href="about.html">Contact us</a>
-        <a href="about.html">Copyrights and Terms of Services</a>
+        <a href="#copyright.html">Copyrights and Terms of Services</a>
     </footer>
 <!-- FOOTER END -->
     <script>
